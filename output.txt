@@ -1,0 +1,51 @@
+/cygdrive/c/Documents and Settings/drew/My Documents/Development/Frameworks/jules/lib /cygdrive/c/Documents and Settings/drew/My Documents/Development/Frameworks/jules/lib/main.js /cygdrive/c/Documents and Settings/drew/My Documents/Development/Frameworks/jules/lib/redirects.json { p: 'project',
+  project: [ 'web', 'project' ],
+  '*': 
+   { create: [ 'project', 'create' ],
+     run: [ 'project', 'run' ] } }
+args:  [ 'create', 'test' ]
+now
+func redirect:  undefined
+* redirect:  [ 'project', 'create' ]
+here
+func redirect:  [ 'web', 'project' ]
+redirect !== undefined
+splitCommand:  [ 'web', 'project', 'create' ]
+func redirect:  undefined
+commandFile:  [ 'web', 'project', 'create' ]
+commandPath:  /cygdrive/c/Documents and Settings/drew/My Documents/Development/Frameworks/jules/lib/commands/web/project/create
+exists:  true  args:  [ 'create', 'test' ]
+create
+struct:  function structure(base, struct) {
+	var newBasePath = base;
+	console.log('base: ', base, ' struct: ', struct);
+	for(key in struct) {
+		mkStructDir(struct, base, key);
+	}
+	
+	return base;
+}
+returned:  undefined
+base:  /cygdrive/c/Documents and Settings/drew/My Documents/Development/Frameworks/jules/test  struct:  { app: 
+   { controllers: {},
+     models: {},
+     views: {},
+     helpers: {},
+     assets: {} },
+  config: {},
+  public: { js: {}, css: {}, pics: {}, err: {} },
+  db: {},
+  tmp: {} }
+
+node.js:116
+        throw e; // process.nextTick error, or 'error' event on first tick
+        ^
+WideCharToMultiByte: The data area passed to a system call is too small.
+ReferenceError: args is not defined
+    at buildStructure (/cygdrive/c/Documents and Settings/drew/My Documents/Development/Frameworks/jules/lib/commands/web/project/create.js:91:20)
+    at ChildProcess.<anonymous> (/cygdrive/c/Documents and Settings/drew/My Documents/Development/Frameworks/jules/lib/commands/web/project/create.js:102:5)
+    at ChildProcess.emit (events.js:45:17)
+    at Socket.<anonymous> (child_process.js:151:12)
+    at Socket.emit (events.js:42:17)
+    at Array.<anonymous> (net.js:800:12)
+    at EventEmitter._tickCallback (node.js:108:26)
