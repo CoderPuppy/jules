@@ -1,6 +1,8 @@
 {
 	"app": {
-		"controllers": {},
+		"controllers": {
+			"ApplicationController.jl": "app/controllers/ApplicationController.jl"
+		},
 		"models": {},
 		"views": {},
 		"helpers": {},
