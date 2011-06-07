@@ -1,8 +1,4 @@
 {
 	"p": "project",
-	"project": ["web", "project"],
-	"*": {
-		"create": ["project", "create"],
-		"run": ["project", "run"]
-	}
+	"project": ["web", "project"]
 }
