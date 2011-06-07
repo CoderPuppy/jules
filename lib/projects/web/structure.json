@@ -1,0 +1,28 @@
+{
+	"app": {
+		"controllers": {},
+		"models": {},
+		"views": {},
+		"helpers": {},
+		"assets": {}
+	},
+	"config": {
+		"envs": {
+			"dev.jl": "config/envs/dev.jl",
+			"pro.jl": "config/envs/production.jl",
+			"test.jl": "config/envs/test.jl"
+		},
+		"routes.jl": "config/routes.jl",
+		"app.jl": "config/app.jl",
+		"env.jl": "config/env.jl",
+		"db.jl": "config/db.jl"
+	},
+	"public": {
+		"js": {},
+		"css": {},
+		"pics": {},
+		"err": {}
+	},
+	"db": {},
+	"tmp": {}
+}

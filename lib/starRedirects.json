@@ -1,0 +1,4 @@
+{
+	"create": ["project", "create"],
+	"run": ["project", "run"]
+}
