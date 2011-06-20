@@ -1,0 +1,41 @@
+{
+	window: {
+		set: function(attr, val) {
+			switch(attr) {
+				default:
+					CODE += "window[" + encodeToJSON(attr) + "] = " + encodeToJSON(val) + ";\n";
+					break;
+			}
+			
+			return this;
+		}
+	},
+	page: {
+		set: function(attr, val) {
+			switch(attr) {
+				default:
+					CODE += "document[" + encodeToJSON(attr) + "] = " + encodeToJSON(val) + ";\n";
+					break;
+			}
+			
+			return this;
+		}
+	},
+	$: (function() {
+		var $_FN = new Class(function $(selector, context) {
+			this.selector = selector;
+			this.context  = context ;
+			CODE += "$_RJS_SELECTED[" + encodeToJSON({selector: selector, context: context}) + "] = $(" + encodeToJSON(selector) + (context ? ',' + encodeToJSON(context) : '') + ");\n";
+			
+			console.log('this: ', this)
+		});
+		
+		function $(selector, context) {
+			return new $_FN(selector, context);
+		}
+		
+		$.fn = $_FN;
+		
+		return $;
+	})()
+}

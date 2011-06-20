@@ -1,0 +1,16 @@
+var funcs = ("attr css animate html text id classes fire bind toString toArray prepend val " +
+						 "removeData data attr each apend hasClass removeClass addClass css not find "   +
+						 "get is blur focus focusin focusout load resize scroll unload click dblclick "  +
+						 "mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change "  +
+						 "select submit keydown keypress keyup error parent parents next prev nextAll "  +
+						 "prevAll siblings children contents").split(' ');
+
+function funcTemplate(name) {
+	return function() {
+		CODE += "$_RJS_SELECTED[" + encodeToJSON({selector: this.selector, context: this.context}) + "]." + name + "(" + Array.prototype.map.call(arguments, function(o) {return encodeToJSON(o);}).join(',') + ");\n";
+	}
+}
+
+for(var i = 0; i < funcs.length; i++) {
+	eval("context.$.fn.extend({" + funcs[i] + ": funcTemplate('" + funcs[i] + "')});");
+}
