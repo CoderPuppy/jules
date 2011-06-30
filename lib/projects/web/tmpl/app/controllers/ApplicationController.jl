@@ -1,5 +1,3 @@
-var ApplicationController = Controller.subClass(function ApplicationController() { // Constructor
-
-}, {
-
+var AppController = controller(function(c) {
+	
 });

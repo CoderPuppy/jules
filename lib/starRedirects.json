@@ -1,5 +1,1 @@
-{
-	"create": ["project", "create"],
-	"run": ["project", "run"],
-	"r": ["project", "run"]
-}
+{}

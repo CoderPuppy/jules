@@ -26,8 +26,6 @@
 			this.selector = selector;
 			this.context  = context ;
 			CODE += "$_RJS_SELECTED[" + encodeToJSON({selector: selector, context: context}) + "] = $(" + encodeToJSON(selector) + (context ? ',' + encodeToJSON(context) : '') + ");\n";
-			
-			console.log('this: ', this)
 		});
 		
 		function $(selector, context) {
@@ -37,5 +35,6 @@
 		$.fn = $_FN;
 		
 		return $;
-	})()
+	})(),
+	js: function(code) {CODE += code;}
 }

@@ -1,4 +1,10 @@
 {
 	"p": "project",
-	"project": ["web", "project"]
+	"r": "run",
+	"c": "create",
+	"project": ["web", "project"],
+	"create": ["project", "create"],
+	"run": ["project", "run"],
+	"e": "env",
+	"env": ["project", "env"]
 }

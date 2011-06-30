@@ -1,12 +1,15 @@
 {
 	"app": {
 		"controllers": {
-			"ApplicationController.jl": "app/controllers/ApplicationController.jl"
+			"AppController.jl": "app/controllers/ApplicationController.jl"
 		},
 		"models": {},
-		"views": {},
+		"views": {
+			"app": {}
+		},
 		"helpers": {},
-		"assets": {}
+		"assets": {},
+		"apps": {}
 	},
 	"config": {
 		"envs": {
@@ -14,11 +17,16 @@
 			"pro.jl": "config/envs/production.jl",
 			"test.jl": "config/envs/test.jl"
 		},
+		"initializers": {},
+		"locales": {
+			"en.lang.json": "config/locales/en.lang.json" 
+		},
 		"routes.jl": "config/routes.jl",
 		"app.jl": "config/app.jl",
 		"env.jl": "config/env.jl",
 		"db.jl": "config/db.jl"
 	},
+	"lib": {},
 	"public": {
 		"js": {},
 		"css": {},
@@ -26,5 +34,6 @@
 		"err": {}
 	},
 	"db": {},
-	"tmp": {}
+	"tmp": {},
+	"Jakefile.jl": "Jakefile.jl"
 }

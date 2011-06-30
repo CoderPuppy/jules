@@ -1,0 +1,9 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=610CA055
+eax=0027CE64 ebx=FFFFFFD9 ecx=7C80189C edx=7C90E514 esi=61169220 edi=00000000
+ebp=18E2CD58 esp=18E2CC80 program=C:\cygwin\usr\local\bin\node.exe, pid 9704, thread sig
+cs=001B ds=0023 es=0023 fs=003B gs=0000 ss=0023
+Stack trace:
+Frame     Function  Args
+18E2CD58  610CA055  (61169220, 00000000, 00000000, 00000000)
+18E2CD88  61003F51  (00000000, 00000000, 00000000, 61004B58)
+End of stack trace
