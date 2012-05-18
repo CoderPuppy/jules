@@ -1,0 +1,18 @@
+{
+	"name": "jules",
+	"version": "0.0.1",
+	"private": true,
+	"author": "Drew",
+	"main": "lib/index",
+	"description": "A dynamic web framework inspired by rails",
+	"keywords": [ "web", "framework", "rails" ],
+	"dependencies": {
+		"natives": "*",
+		"celeri": "0.2.x",
+		"node-fs": "0.1.x"
+	},
+	"bugs": {
+		"url": "http://github.com/drewyoung1/jules/issues"
+	},
+	"repository": { "type": "git" , "url": "http://github.com/drewyoung1/jules.git" }
+}
