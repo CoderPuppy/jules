@@ -4,12 +4,17 @@
 	"private": true,
 	"author": "Drew",
 	"main": "lib/index",
+	"bin": {
+		"jules": "./bin/jules.js"
+	},
 	"description": "A dynamic web framework inspired by rails",
-	"keywords": [ "web", "framework", "rails" ],
+	"keywords": [ "web", "framework", "connect" ],
 	"dependencies": {
 		"natives": "*",
 		"celeri": "0.2.x",
-		"node-fs": "0.1.x"
+		"node-fs": "0.1.x",
+		"falafel": "0.0.x",
+		"xregexp": "*"
 	},
 	"bugs": {
 		"url": "http://github.com/drewyoung1/jules/issues"

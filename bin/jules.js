@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var celeri = require('celeri');
 var n = require('natives');
 var path = n.path;
@@ -10,7 +11,5 @@ commands.add(function() {
 	celeri.open();
 	celeri.parse(process.argv, function(e, cmd) {
 		if(e) throw e;
-		
-		process.exit();
 	});
 });

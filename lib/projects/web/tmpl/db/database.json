@@ -1,0 +1,14 @@
+{
+	"development": {
+		"type": "nstore",
+		"db": "development.db"
+	},
+	"production": {
+		"type": "nstore",
+		"db": "production.db"
+	},
+	"test": {
+		"type": "nstore",
+		"db": "test.db"
+	}
+}
